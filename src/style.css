@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+
+body {
+  font-size: 14px;
+}
+
+/* background-position: 100% -1px; */
+
+h1,
+h2,
+h3,
+h4,
+.btn {
+  @apply font-raleway;
+}
+
+.container {
+  @apply mx-auto;
+  width: 90%;
+}
+
+.notify {
+  transform: translateY(-50%);
+}
+
+.btn {
+  @apply block bg-btn py-3 px-16 rounded-20 mx-auto outline-none font-bold;
+}
+
+.icon {
+  @apply w-10 h-10 border-white border rounded-full flex justify-center;
+}
+
+.underlinen {
+  @apply inline-block bg-color5;
+  height: 2px;
+  width: 9.3rem;
+}
+
+p {
+  @apply font-openSans;
+}
+
+.quote::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  display: block;
+  background-image: url('../public/images/bg-quotes.png');
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 100px;
+  background-size: 25px;
+}
+
+@media (min-width: 768px) {
+  .quote::before {
+    background-size: 50px;
+    z-index: -100;
+    top: -30px;
+    left: -10px;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@tailwind utilities;

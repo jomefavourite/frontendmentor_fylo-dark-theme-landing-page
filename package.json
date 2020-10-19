@@ -1,0 +1,18 @@
+{
+  "name": "fylo-dark-theme-landing-page-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the Fylo landing page with dark theme and features grid challenge](./design/desktop-preview.jpg)",
+  "main": "tailwind-default.config.js",
+  "dependencies": {
+    "postcss-cli": "^8.1.0",
+    "tailwindcss": "^1.8.12"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "postcss src/style.css -o public/style.css",
+    "watch": "postcss src/style.css -o public/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
